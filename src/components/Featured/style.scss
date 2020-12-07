@@ -1,0 +1,103 @@
+.featured {
+    margin-bottom: 150px;
+    height: 501px;
+    background: url('https://picsum.photos/id/100/1280/501') no-repeat;
+
+    > div {
+        position: relative;
+        margin: 0 auto;
+        width: 880px;
+        height: 501px;
+
+        h2 {
+            position: absolute;
+            right: 0;
+            bottom: 30px;
+            width: 300px;
+            font-size: 30px;
+        }
+
+        img {
+            display: block;
+            position: absolute;
+            bottom: -64px;
+        }
+
+        ul {
+            padding-top: 50px;
+
+            li {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 880px) {
+        > div {   
+            padding: 0 10px;
+            width: auto;
+            height: 501px;
+        }
+    }
+
+    @media screen and (max-width: 660px) {
+        margin-bottom: 100px;
+
+        > div {
+            img {
+                bottom: -44px;
+                width: 250px;
+                height: auto;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        margin-bottom: 50px;
+        
+        > div {
+            padding-top: 40px;
+
+            h2 {
+                position: static;
+                margin-bottom: 20px;
+                width: 100%;
+                text-align: center;
+                font-size: 22px;
+            }
+
+            img {
+                position: static;
+                float: left;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        > div {
+            img {
+                float: none;
+                margin: 0 auto;
+                width: auto;
+                height: 250px;
+            }
+
+            ul {
+                padding-top: 20px;
+
+                li {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        > div {
+            h2 {
+                font-size: 18px;
+            }
+        }
+    }
+}

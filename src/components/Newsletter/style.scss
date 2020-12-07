@@ -1,0 +1,96 @@
+.newsletter {
+    margin: 0 auto 50px;
+    width: 981px;
+
+    fieldset {
+        border: none;
+
+        legend {
+            display: none;
+        }
+
+        label {
+            display: block;
+            float: left;
+            width: 245px;
+            margin-right: 40px;
+        }
+
+        input {
+            margin: 15px 10px 0 0;
+            border: none;
+            border-bottom: 2px solid #000;
+            width: 442px;
+            height: 40px;
+            font-size: 18px;
+        }
+
+        button {
+            border: none;
+            width: 215px;
+            height: 44px;
+            background: #000;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width: 981px) {
+        padding: 0 10px;
+        width: 750px;
+
+        fieldset {
+            label {
+                width: 200px;
+                margin-right: 20px;
+            }
+
+            input {
+                width: 300px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 400px;
+
+        fieldset {
+            label {
+                float: none;
+                width: 400px;
+                margin-right: 20px;
+            }
+
+            input {
+                width: 250px;
+            }
+
+            button {
+                border: none;
+                width: 140px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        width: auto;
+
+        fieldset {
+            label {
+                width: auto;
+                margin-right: 0;
+            }
+
+            input {
+                margin-bottom: 20px;
+                width: 250px;
+            }
+
+            button {
+                border: none;
+                width: 140px;
+            }
+        }
+    }
+}

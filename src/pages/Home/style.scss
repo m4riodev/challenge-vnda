@@ -1,0 +1,230 @@
+.home {
+    position: relative;
+    width: 100%;
+    
+    article {
+        margin-bottom: 150px;
+        padding: 160px 139px 107px;
+        width: 458px;
+        background-color: #F5E5D9;
+
+        &.no-bg {
+            background: none;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        p {
+            margin-bottom: 30px;
+            width: 300px;
+        }
+    }
+
+    > strong {
+        display: block;
+        margin: 150px auto 200px;
+        width: 587px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .box {
+        position: relative;
+        background-color: #F5E5D9;
+
+        > img:first-child {
+            position: absolute;
+            top: -77px;
+            right: 0;
+        }
+    }
+
+    .gallery {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        
+        img {
+            position: absolute;
+            display: block;
+        }
+
+        .pos1 {
+            right: 35px;
+            z-index: 9;
+        }
+
+        .pos2 {
+            top: 259px;
+            right: 0;
+            z-index: 8;
+        }
+
+        .pos3 {
+            top: 564px;
+            left: 453px;
+            z-index: 8;
+        }
+
+        .pos4 {
+            top: 950px;
+            right: 0;
+            z-index: 9;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        article {
+            margin-bottom: 50px;
+            padding: 160px 50px 107px;
+        }
+
+        .box {
+            > img:first-child {
+                top: -50px;
+                width: 400px;
+                height: auto;
+            }
+        }
+        
+        .gallery {
+            .pos3 {
+                left: auto;
+                right: 20px;
+                width: 400px;
+                height: auto;
+            }
+
+            .pos4 {
+                top: 1105px;
+                width: 400px;
+                height: auto;
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .gallery {
+            .pos1 {
+                right: 0;
+                width: 300px;
+                height: auto;
+            }
+
+            .pos2 {
+                top: 350px;
+                width: 300px;
+                height: auto;
+            }
+
+            .pos3 {
+                top: 800px;
+                right: 0;
+                width: 300px;
+                height: auto;
+            }
+
+            .pos4 {
+                width: 300px;
+                height: auto;
+            }
+        }
+
+        .box {
+            > img:first-child {
+                top: 50px;
+                width: 300px;
+                height: auto;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        article {
+            margin-bottom: 50px;
+            padding: 50px 30px 50px 20px;
+            width: 400px;
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+
+        > strong {
+            margin: 100px auto;
+            width: 587px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        .box {
+            > img:first-child {
+                width: 250px;
+            }
+        }
+
+        .gallery {
+            .pos1 {
+                width: 250px;
+            }
+
+            .pos2 {
+                top: 294px;
+                width: 250px;
+            }
+
+            .pos3 {
+                top: 670px;
+                width: 250px;
+            }
+
+            .pos4 {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 660px) {
+        article {
+            margin-bottom: 10px;
+            width: auto;
+
+            h2 {
+                font-size: 22px;
+            }
+
+            p {
+                width: auto;
+            }
+        }
+
+        > strong {
+            width: auto;
+        }
+        
+        .gallery {
+            .pos1, .pos2, .pos3 {
+                display: none;
+            }
+        }
+
+        .box {
+            > img:first-child {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        > strong {
+            margin: 70px auto;
+            padding: 0 20px;
+            font-size: 20px;
+        }
+    }
+}

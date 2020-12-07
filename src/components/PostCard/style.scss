@@ -1,0 +1,48 @@
+.post-card {
+    position: relative;
+    
+    * {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    > div {
+        padding-left: 59px;
+        width: 213px;
+
+        h3 {
+            font-size: 30px;
+        }
+
+        a:first-child {
+            position: relative;
+            z-index: 5;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+
+        small {
+            text-decoration: underline;
+        }
+
+        .more-info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-indent: -5000em;
+        }
+    }
+
+    @media screen and (max-width: 970px) {
+        > div {
+            padding-left: 20px;
+            width: calc(100% - 30px);
+
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+}
